@@ -1,0 +1,32 @@
+.after, .before {
+    height:25px;
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div, section {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+section#home video{
+    top: -15%;
+}
+#home {
+    position: relative;
+    height:97vh;
+    width:100%;
+    overflow: hidden;
+}
+button.full-width.btn--primary{
+    color: #000;
+}
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}

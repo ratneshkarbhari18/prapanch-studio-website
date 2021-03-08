@@ -10,7 +10,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Glint</title>
+    <title>Home | Prapanch Studio</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -20,9 +20,12 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="css/custom.min.css">
 
     <!-- script
     ================================================== -->
@@ -44,7 +47,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage">
+                <img src="images/prapanch_logo.png" alt="Homepage">
             </a>
         </div>
 
@@ -96,18 +99,21 @@
     </header> <!-- end s-header -->
 
 
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section d-none d-lg-block d-xl-block">
 
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="videos/home_bg.mp4" type="video/mp4">
+            <source src="movie.webm" type="video/webm">Sorry, your browser does not support HTML5 video.
+        </video>
 
-        <div class="home-content">
+        <!-- <div class="overlay"></div>
+        <div class="shadow-overlay"></div> -->
+
+        <div class="home-content" style="display: none;">
 
             <div class="row home-content__main">
 
-                <h3>Welcome to Glint</h3>
+                <h3>Welcome to Prapanch Studio</h3>
 
                 <h1>
                     We are a creative group <br>
@@ -157,8 +163,14 @@
         </ul> 
         <!-- end home-social -->
 
-    </section> <!-- end s-home -->
-
+    </section>
+    <section id="mobile-home" class="d-sm-block d-md-block d-lg-none">
+        <div class="before"></div>
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <source src="videos/home_bg.mp4" type="video/mp4">
+        <p>This is text that is in front of video, we do not want the z-index of video to be greater than content. Hence background!</p>
+        <div class="after"></div>
+    </section>
 
     <!-- about
     ================================================== -->
@@ -167,7 +179,7 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--dark">Hello There</h3>
-                <h1 class="display-1 display-1--light">We Are Glint</h1>
+                <h1 class="display-1 display-1--light">We Are Prapanch Studio</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -179,7 +191,7 @@
             </div>
         </div> <!-- end about-desc -->
 
-        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+        <div class="row d-none about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
             <div class="col-block stats__col ">
                 <div class="stats__count">127</div>
@@ -512,7 +524,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Our Clients</h3>
-                <h1 class="display-2">Glint has been honored to
+                <h1 class="display-2">Prapanch Studio has been honored to
                 partner up with these clients</h1>
             </div>
         </div> <!-- end section-header -->
@@ -665,8 +677,8 @@
                     <div class="cinfo">
                         <h5>Email Us At</h5>
                         <p>
-                            contact@glintsite.com<br>
-                            info@glintsite.com
+                            contact@Prapanch Studiosite.com<br>
+                            info@Prapanch Studiosite.com
                         </p>
                     </div>
 
@@ -713,7 +725,7 @@
 
             <div class="col-six tab-full left footer-desc">
 
-                <div class="footer-logo"></div>
+                <div class="footer-logox"><img src="images/prapanch_logo.png" style="width: 20%;"></div>
                 Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
 
             </div>
@@ -739,8 +751,8 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright Glint 2017</span> 
-                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                    <span>© Copyright Prapanch Studio 2021</span> 
+                    <span class="d-none">Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
                 </div>
 
                 <div class="go-top">
