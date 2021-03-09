@@ -454,7 +454,7 @@
         clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
-        clPhotoswipe();
+        // clPhotoswipe();
         clStatCount();
         clMasonryFolio();
         clSlickSlider();
