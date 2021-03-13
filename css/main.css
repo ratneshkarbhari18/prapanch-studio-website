@@ -1811,12 +1811,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__main {
-    padding-top: 8rem;
+    padding-top: 13rem;
     position: relative;
 }
 
 .home-content__buttons {
-    padding-top: 3rem;
+    padding-top: 1rem;
     text-align: left;
 }
 
@@ -1824,7 +1824,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     width: 215px;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    margin: 1.5rem 1.5rem 0 0;
+    margin: 0.5rem 0.5rem 0 0;
     letter-spacing: .25rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -2162,6 +2162,7 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__buttons {
         padding-top: 1.2rem;
+        margin: 0 auto;
     }
     .home-content__buttons .btn {
         width: auto;

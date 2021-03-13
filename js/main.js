@@ -470,3 +470,9 @@
         
         
 })(jQuery);
+
+setTimeout(function() {   //calls click event after a certain time
+    $("video#videobcgx").css("display","none");
+    $("video#videobcg").css("display","none");
+    $("div.home-content").css("display","block");
+ }, 7000);
