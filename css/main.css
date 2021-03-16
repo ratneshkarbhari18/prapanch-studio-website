@@ -2396,9 +2396,9 @@ html.no-csstransitions .home-content__main {
     padding-right: 50px;
 }
 
-.services-list .service-item:nth-child(2n+2) {
+/* .services-list .service-item:nth-child(2n+2) {
     padding-left: 50px;
-}
+} */
 
 .services-list .service-text {
     margin-left: 7.8rem;
