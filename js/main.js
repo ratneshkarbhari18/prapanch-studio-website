@@ -471,8 +471,16 @@
         
 })(jQuery);
 
-setTimeout(function() {   //calls click event after a certain time
-    $("video#videobcgx").css("display","none");
-    $("video#videobcg").css("display","none");
-    $("div.home-content").css("display","block");
- }, 7000);
+document.getElementById("videobcgx").addEventListener('ended', function( evt ) {
+    setTimeout(function() {   //calls click event after a certain time
+        $("video#videobcgx").fadeOut('slow');
+        $("div.home-content").fadeIn();
+     }, 5000);
+} );
+
+document.getElementById("videobcg").addEventListener('ended', function( evt ) {
+    setTimeout(function() {   //calls click event after a certain time
+        $("video#videobcg").fadeOut('slow');
+        $("div.home-content").fadeIn();
+     }, 5000);
+} );
